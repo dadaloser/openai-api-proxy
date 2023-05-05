@@ -1,4 +1,4 @@
-module github.com/xyhelper/openai-api-proxy
+module github.com/dadaloser/openai-api-proxy
 
 go 1.20
 
