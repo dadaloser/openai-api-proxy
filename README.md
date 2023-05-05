@@ -9,4 +9,12 @@ docker run -p 5440:5440 openai-api-proxy
 
 //后台运行
 docker run --name openai-api-proxy -d -p 5440:5440 openai-api-proxy
+
+//删除容器(-f 强制)
+docker rm -f openai-api-proxy 
+
+//删除镜像
+docker rmi -f openai-api-proxy 
+
+
 ```
