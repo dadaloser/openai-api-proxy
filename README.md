@@ -4,6 +4,9 @@
 // 加载镜像
 docker build -t openai-api-proxy .
 
-//创建容器,容器端口80映射到主机端口8080
-docker run -p 8080:80 openai-api-proxy 
+//创建容器
+docker run -p 5440:5440 openai-api-proxy 
+
+//后台运行
+docker run --name openai-api-proxy -d -p 5440:5440 openai-api-proxy
 ```

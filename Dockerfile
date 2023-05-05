@@ -30,7 +30,7 @@ COPY --from=builder /app/main /usr/local/bin/main
 ENV GIN_MODE=release
 
 # 暴露应用程序的默认端口
-EXPOSE 8080
+EXPOSE 5440
 
 # 启动应用程序
 CMD ["/usr/local/bin/main"]
